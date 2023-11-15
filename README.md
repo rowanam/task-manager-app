@@ -1,6 +1,23 @@
+# Task Manager App
+
+## Set Up Workspace
+
+To install Flask-SQLAlchemy, run this command to get the version used in this walkthrough project:
+
+`pip3 install 'Flask-SQLAlchemy<3' psycopg2 sqlalchemy==1.4.46`
+
+The versions of Flask and Werkzeug have also changed, so uninstall both of these with `pip uninstall <package-name>`.
+
+Then reinstall the older versions with:
+
+- `pip3 install Flask==2.1.3`
+- `pip3 install Werkzeug==2.2.2`
+
+## CI Repo Template Instructions
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
+Welcome rowanam,
 
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
