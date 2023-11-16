@@ -2,6 +2,8 @@
 
 ## Set Up Workspace
 
+### Install Flask-SQLAlchemy
+
 To install Flask-SQLAlchemy, run this command to get the version used in this walkthrough project:
 
 `pip3 install 'Flask-SQLAlchemy<3' psycopg2 sqlalchemy==1.4.46`
@@ -12,6 +14,25 @@ Then reinstall the older versions with:
 
 - `pip3 install Flask==2.1.3`
 - `pip3 install Werkzeug==2.2.2`
+
+### Set up locally hosted database
+
+Run `psql` to open Postgres CLI. If this doesn't work, run `set_pg` first then try again.
+
+In Postgres CLI, create new database:
+
+`CREATE DATABASE taskmanager;`
+
+To connect to new database, run `\c taskmanager;`
+
+### Migrate data models into database
+
+Once class-based models are created in a Python file (models.py), migrate the schema into the database
+
+- Open Python interpreter: `python3`
+- Import db: `from taskmanager import db`
+- Create the tables and schema: `db.create_all()`
+- Exit Python interpreter: `exit()`
 
 ## CI Repo Template Instructions
 
