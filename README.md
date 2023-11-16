@@ -34,6 +34,10 @@ Once class-based models are created in a Python file (models.py), migrate the sc
 - Create the tables and schema: `db.create_all()`
 - Exit Python interpreter: `exit()`
 
+## Technologies Used
+
+- [Materialize](https://materializecss.com/) framework
+
 ## CI Repo Template Instructions
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
