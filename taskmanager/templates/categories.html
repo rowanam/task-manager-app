@@ -26,22 +26,28 @@
                     class="btn-small orange lighten-1">Edit</a>
                 <a href="#modal-{{ category.id }}" class="btn-small red darken-1 modal-trigger">Delete</a>
 
-                <!-- modal -->
-                <div id="modal-{{ category.id }}" class="modal">
-                    <div class="modal-content">
-                        <h4>Confirm Delete</h4>
-                        <p>Are you sure you want to delete this category? This action cannot be undone.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="{{ url_for('delete_category', category_id=category.id) }}"
-                            class="btn-flat red darken-1 white-text">Delete</a>
-                        <a href="#!" class="btn-flat brown-text modal-close">Cancel</a>
-                    </div>
-                </div>
-
             </div>
 
         </div>
+
+        <!-- modal -->
+        <div id="modal-{{ category.id }}" class="modal">
+            <div class="modal-content">
+                <h4>Confirm Delete</h4>
+                <p>Are you sure you want to delete this category?</p>
+                <p>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <strong>Warning: all associated tasks will also be deleted.</strong>
+                </p>
+                <p>This action cannot be undone.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="{{ url_for('delete_category', category_id=category.id) }}"
+                    class="btn-flat red darken-1 white-text">Delete</a>
+                <a href="#!" class="btn-flat brown-text modal-close">Cancel</a>
+            </div>
+        </div>
+
     </div>
     {% endfor %}
 </div>
