@@ -27,13 +27,19 @@
                 </div>
             </div>
             <div class="collapsible-body brown lighten-5">
-                <div class="row task-row">
+                <div class="row">
                     <div class="col s8">
                         {{ task.task_description }}
                     </div>
                     <div class="col s3 valign-wrapper task-category-wrapper">
                         <i class="fa-solid fa-folder-open task-folder-icon"></i>
                         <strong>{{ task.category }}</strong>
+                    </div>
+                </div>
+                <div class="row task-controls-row">
+                    <div class="col s12">
+                        <a href="{{ url_for('edit_task', task_id=task.id) }}" 
+                            class="btn-flat btn-small orange lighten-1 white-text">Edit</a>
                     </div>
                 </div>
             </div>
