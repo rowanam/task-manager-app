@@ -7,3 +7,26 @@ body {
 main {
     flex: 1 0 auto;
 }
+
+.task-due-date {
+    margin-left: auto;
+    padding-right: 1rem;
+}
+
+.task-date-icon {
+    font-size: 1.3rem !important;
+    margin-right: .7rem !important;
+}
+
+.task-row {
+    margin-bottom: 0;
+}
+
+.task-category-wrapper {
+    justify-content: flex-end;
+}
+
+.task-folder-icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
